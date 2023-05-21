@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
-
 import './Slider.css';
-
 import { SliderProducts } from '../../data/products';
 
 const Slider = () => {
