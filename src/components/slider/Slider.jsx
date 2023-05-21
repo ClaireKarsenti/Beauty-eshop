@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 import './Slider.css';
