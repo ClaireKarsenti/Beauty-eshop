@@ -6,10 +6,10 @@ import Plane from '../../assets/plane.png';
 const Products = () => {
   const [menuProducts, setMenuProducts] = useState(ProductsData);
 
-  const filter = (type) => {
+  const filterProductsByType = (type) => {
     setMenuProducts(ProductsData.filter((product) => product.type === type));
   };
-  const allFilter = () => {
+  const allProducts = () => {
     setMenuProducts(ProductsData);
   };
 
@@ -20,11 +20,15 @@ const Products = () => {
 
       <div className={css.products}>
         <ul className={css.menu}>
-          <li onClick={allFilter}>All</li>
-          <li onClick={() => filter('skin care')}>Skin Care</li>
-          <li onClick={() => filter('conditioner')}>Conditioners</li>
-          <li onClick={() => filter('foundation')}>Foundations</li>
-          <li onClick={() => filter('serum')}>Serums</li>
+          <li onClick={allProducts}>All</li>
+          <li onClick={() => filterProductsByType('skin care')}>Skin Care</li>
+          <li onClick={() => filterProductsByType('conditioner')}>
+            Conditioners
+          </li>
+          <li onClick={() => filterProductsByType('foundation')}>
+            Foundations
+          </li>
+          <li onClick={() => filterProductsByType('serum')}>Serums</li>
         </ul>
 
         <div className={css.list}>
