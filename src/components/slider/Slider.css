@@ -41,11 +41,11 @@
 .name > :nth-child(2) {
   font-size: 0.7rem;
 }
-.left-swiper > :nth-child(2) {
+.left-slider > :nth-child(2) {
   font-weight: bold;
   font-size: 2rem;
 }
-.left-swiper > :nth-child(3) {
+.left-slider > :nth-child(3) {
   font-size: 0.6rem;
   border: 1px solid var(--black);
   border-radius: 15px;
