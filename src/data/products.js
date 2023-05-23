@@ -60,7 +60,7 @@ export const ProductsData = [
     detail: 'Super Skin Care',
     price: '25',
     img: img4,
-    type: 'foundation',
+    type: 'serum',
   },
   {
     name: 'SERUM',
@@ -102,7 +102,7 @@ export const ProductsData = [
     detail: 'Super Skin Care',
     price: '30',
     img: img10,
-    type: 'conditioner',
+    type: 'serum',
   },
   {
     name: 'FOUNDATION',
