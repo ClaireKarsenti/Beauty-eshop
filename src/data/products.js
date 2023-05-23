@@ -67,7 +67,7 @@ export const ProductsData = [
     detail: 'Best Serum',
     price: '30',
     img: img5,
-    type: 'conditioner',
+    type: 'serum',
   },
   {
     name: 'NATURE',
