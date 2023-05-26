@@ -7,6 +7,35 @@ import css from './Footer.module.css';
 
 import FooterElement from '../FooterElement/FooterElement';
 
+const footerData = [
+  {
+    title: 'Contact Us',
+    firstIcon: <GoLocation className={css.icon} />,
+    firstContent: '111 north avenue Orlando, FL 32801',
+    secondIcon: <BsTelephone className={css.icon} />,
+    secondContent: <a href="tel:322-309-3489">322-309-3489</a>,
+    thirdIcon: <MdOutlineAlternateEmail className={css.icon} />,
+    thirdContent: (
+      <a href="mailto:support@beautyShop.com">support@beautyShop.com</a>
+    ),
+  },
+  {
+    title: 'Account',
+    firstIcon: <HiOutlineLogin className={css.icon} />,
+    firstContent: 'Sing In',
+  },
+  {
+    title: 'Company',
+    firstIcon: <BsPeople className={css.icon} />,
+    firstContent: 'About us',
+  },
+  {
+    title: 'Resources',
+    firstIcon: <HiOutlineLink className={css.icon} />,
+    firstContent: 'Safety Privacy & Terms',
+  },
+];
+
 const Footer = () => {
   return (
     <div className={css.cFooterWrapper}>
@@ -17,39 +46,19 @@ const Footer = () => {
           <span>Beauty shop</span>
         </div>
 
-        <FooterElement
-          className={css.block}
-          title={'Contact Us'}
-          firstIcon={<GoLocation className={css.icon} />}
-          firstContent={'111 north avenue Orlando, FL 32801'}
-          secondIcon={<BsTelephone className={css.icon} />}
-          secondContent={<a href="tel:322-309-3489">322-309-3489</a>}
-          thirdIcon={<MdOutlineAlternateEmail className={css.icon} />}
-          thirdContent={
-            <a href="mailto:support@beautyShop.com">support@beautyShop.com</a>
-          }
-        />
-
-        <FooterElement
-          className={css.block}
-          title={'Account'}
-          firstIcon={<HiOutlineLogin className={css.icon} />}
-          firstContent={'Sing In'}
-        />
-
-        <FooterElement
-          className={css.block}
-          title={'Company'}
-          firstIcon={<BsPeople className={css.icon} />}
-          firstContent={'About us'}
-        />
-
-        <FooterElement
-          className={css.block}
-          title={'Resources'}
-          firstIcon={<HiOutlineLink className={css.icon} />}
-          firstContent={'Safety Privacy & Terms'}
-        />
+        {footerData.map((data, index) => (
+          <FooterElement
+            key={index}
+            className={css.block}
+            title={data.title}
+            firstIcon={data.firstIcon}
+            firstContent={data.firstContent}
+            secondIcon={data.secondIcon}
+            secondContent={data.secondContent}
+            thirdIcon={data.thirdIcon}
+            thirdContent={data.thirdContent}
+          />
+        ))}
       </div>
 
       <div className={css.copyRight}>
