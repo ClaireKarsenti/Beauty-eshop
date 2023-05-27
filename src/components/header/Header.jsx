@@ -5,7 +5,7 @@ import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { GoThreeBars } from 'react-icons/go';
 
 const Header = () => {
-  const [isShowMenu, setIsShowMenu] = useState(false);
+  const [isShowMenu, setIsShowMenu] = useState(true);
 
   const toggleMenu = () => {
     setIsShowMenu((isShowMenu) => !isShowMenu);
