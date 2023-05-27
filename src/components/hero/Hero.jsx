@@ -36,7 +36,12 @@ const Hero = () => {
           aria-hidden="true"
           width={600}
         />
-        <div className={css.cart2}>
+        <motion.div
+          initial={{ right: '4%' }}
+          whileInView={{ right: '2%' }}
+          transition={transition}
+          className={css.cart2}
+        >
           <HiShoppingBag />
           <div className={css.signup}>
             <span>Best Signup Offers</span>
@@ -44,7 +49,7 @@ const Hero = () => {
               <BsArrowRight />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className={css.h_sides}>

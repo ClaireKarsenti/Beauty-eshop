@@ -27,7 +27,6 @@
   display: flex;
   position: absolute;
   bottom: 25%;
-  left: 78%;
   gap: 1rem;
   align-items: center;
 }
