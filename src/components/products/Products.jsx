@@ -16,7 +16,7 @@ const Products = () => {
   return (
     <div className={css.container}>
       <img src={Plane} alt="" aria-hidden="true" />
-      <h1>Our features products</h1>
+      <h1>Our featured products</h1>
 
       <div className={css.products}>
         <ul className={css.menu}>
