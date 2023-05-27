@@ -27,7 +27,15 @@ const Hero = () => {
           className={css.blueCircle}
           transition={transition}
         ></motion.div>
-        <img src={HeroImg} alt="" aria-hidden="true" width={600} />
+        <motion.img
+          initial={{ bottom: '2rem' }}
+          whileInView={{ bottom: '0rem' }}
+          transition={transition}
+          src={HeroImg}
+          alt=""
+          aria-hidden="true"
+          width={600}
+        />
         <div className={css.cart2}>
           <HiShoppingBag />
           <div className={css.signup}>
