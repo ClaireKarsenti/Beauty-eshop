@@ -2,7 +2,7 @@ import { GoLocation } from 'react-icons/go';
 import { BsTelephone, BsPeople } from 'react-icons/bs';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { HiOutlineLogin, HiOutlineLink } from 'react-icons/hi';
-import css from '../components/footer/Footer.module.css';
+import css from '../components/footerSection/Footer.module.css';
 
 export const FooterData = [
   {
