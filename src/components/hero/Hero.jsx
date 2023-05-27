@@ -28,7 +28,7 @@ const Hero = () => {
           transition={transition}
         ></motion.div>
         <motion.img
-          initial={{ bottom: '2rem' }}
+          initial={{ bottom: '-2rem' }}
           whileInView={{ bottom: '0rem' }}
           transition={transition}
           src={HeroImg}
