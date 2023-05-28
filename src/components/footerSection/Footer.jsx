@@ -1,4 +1,4 @@
-import FooterElement from '../footerElement/FooterElement';
+import FooterElement from '../FooterElement/FooterElement';
 import { FooterData } from '../../data/footer';
 import Logo from '../../assets/logo.png';
 import css from './Footer.module.css';
